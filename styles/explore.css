@@ -1,0 +1,270 @@
+body {
+  font-family: Inter, sans-serif;
+}
+
+a:visited {
+  color: inherit;
+}
+
+/* Header start */
+
+#header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 18%;
+  margin-right: 18%;
+  position: relative;
+}
+
+#logo {
+  width: 175px;
+  height: 114px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+}
+
+#menu-icon span {
+  display: block;
+  height: 3px;
+  background-color: #000;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+#menu li {
+  margin: 10px;
+}
+
+@media (max-width: 767px) {
+  #logo {
+    width: 120px;
+    height: 78px;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  #menu-icon {
+    display: flex;
+  }
+
+  #menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    background-color: #f9f9f9;
+    z-index: 1;
+  }
+
+  #menu li {
+    margin: 0;
+  }
+
+  #header-wrapper #menu-icon {
+    display: flex;
+    z-index: 2;
+  }
+
+  #header-wrapper #menu-toggle:checked ~ #menu {
+    display: flex;
+    z-index: 1;
+  }
+}
+
+/* Header end */
+
+/* Main start */
+
+#main {
+  padding: 2% 0;
+}
+
+#For-kids {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10%;
+}
+
+#kids-left {
+  max-width: 600px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#kids-left h1 {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+#kids-left p {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#kids-right img {
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+#For-teachers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#teachers-left {
+  max-width: 500px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#teachers-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+#teachers-right img {
+  margin: 5px;
+  max-width: 100%;
+  height: auto;
+}
+
+#t-border {
+  background: black;
+  height: 2px;
+  margin: 5% 19%;
+}
+
+#k-border {
+  background: black;
+  height: 2px;
+  margin: 5% 19%;
+}
+
+#teachers-left h1 {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+#teachers-left p {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#r-border {
+  background: black;
+  height: 2px;
+  margin: 5% 19%;
+}
+
+#Researchers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10%;
+  margin-top: 50px;
+}
+
+#r-left {
+  max-width: 500px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#r-right {
+  margin-top: 2%;
+}
+
+#r-right img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main end */
+
+/* Footer start */
+
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background: rgba(196, 148, 64, 0.12);
+  margin-top: 50px;
+}
+
+#footer h3 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#footer p {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0.5rem 0;
+  text-decoration: underline;
+}
+
+#exhibition-footer {
+  margin-bottom: 10px;
+  margin-left: 19%;
+}
+
+#involved-footer {
+  margin-bottom: 10px;
+  margin-right: 19%;
+}
+
+@media (max-width: 767px) {
+  #footer {
+    flex-direction: column;
+  }
+  
+  #footer h3 {
+    margin-bottom: 0;
+  }
+  
+  #footer p {
+    margin-bottom: 0;
+  }
+}
+
+/* Footer end */

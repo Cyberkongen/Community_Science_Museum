@@ -1,0 +1,201 @@
+body {
+    font-family: Inter, sans-serif;
+  }
+  
+  a:visited {
+    color: inherit;
+  }
+  
+  /* Header start */
+  
+  #header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 18%;
+    margin-right: 18%;
+  }
+  
+  #logo {
+    width: 175px;
+    height: 114px;
+  }
+  
+  #navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 24px;
+    margin-top: 66px;
+  }
+  
+  #navbar li {
+    margin: 10px;
+  }
+  
+  /* Header end */
+  
+  /* Cosmology start */
+  
+  #cosmology-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+  }
+  
+  #cosmology-left img {
+    width: 600px;
+    height: auto;
+  }
+  
+  #cosmology-right {
+    margin-left: 4%;
+    flex-basis: 600px;
+    max-width: calc(100% - 600px);
+  }
+  
+  #cosmology-right h1 {
+    font-weight: 700;
+    font-size: 40px;
+  }
+  
+  #cosmology-right p {
+    font-weight: 400;
+    font-size: 22px;
+  }
+  
+  /* Cosmology end */
+  
+  /* Evolution start */
+  
+  #Evolution-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+  }
+  
+  #Evolution-left img {
+    width: 600px;
+    height: auto;
+  }
+  
+  #Evolution-right {
+    margin-left: 4%;
+    flex-basis: 600px;
+    max-width: calc(100% - 600px);
+  }
+  
+  #Evolution-right h1 {
+    font-weight: 700;
+    font-size: 40px;
+  }
+  
+  #Evolution-right p {
+    font-weight: 400;
+    font-size: 22px;
+  }
+  
+  /* Evolution end */
+  
+  /* Robotics and AI start */
+  
+  #Robotics-ai {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+  }
+  
+  #Robotics-ai img {
+    width: 300px;
+    height: auto;
+    margin: 5px;
+  }
+  
+  #robotics-right {
+    margin-left: 4%;
+    flex-basis: 600px;
+    max-width: calc(100% - 600px);
+  }
+  
+  #robotics-right h1 {
+    font-weight: 700;
+    font-size: 40px;
+  }
+  
+  #robotics-right p {
+    font-weight: 400;
+    font-size: 22px;
+  }
+  
+  /* Robotics and AI end */
+  
+  /* Ecology start */
+  
+  #Ecology {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+  }
+  
+  #Ecology-left img {
+    width: 600px;
+    height: auto;
+  }
+  
+  #Ecology-right {
+    margin-left: 4%;
+    flex-basis: 600px;
+    max-width: calc(100% - 600px);
+  }
+  
+  #Ecology-right h1 {
+    font-weight: 700;
+    font-size: 40px;
+  }
+  
+  #Ecology-right p {
+    font-weight: 400;
+    font-size: 22px;
+  }
+  
+  /* Ecology end */
+  
+  /* Footer start */
+  
+  footer {
+    background: rgba(196, 148, 64, 0.12);
+    margin-top: 1%;
+    padding: 20px 0;
+  }
+  
+  #footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  #footer h3 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  
+  #footer p {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0.5rem 0;
+    text-decoration: underline;
+  }
+  
+  #exhibition-footer,
+  #Explore-footer,
+  #Events-footer,
+  #involved-footer {
+    flex-basis: 25%;
+    max-width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Footer end */
+  

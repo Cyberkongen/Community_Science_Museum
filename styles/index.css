@@ -1,0 +1,287 @@
+body {
+    font-family: Inter, sans-serif;
+  }
+
+a:visited {
+    color: inherit;
+}
+  
+  
+/* Header start */
+
+#header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 18%;
+    margin-right: 18%;
+    position: relative;
+  }
+  
+  #logo {
+    width: 175px;
+    height: 114px;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  #menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  #menu-icon span {
+    display: block;
+    height: 3px;
+    background-color: #000;
+  }
+  
+  #menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    z-index: 1;
+  }
+  
+  #menu li {
+    margin: 10px;
+  }
+  
+  @media (max-width: 767px) {
+    #logo {
+      width: 120px;
+      height: 78px;
+    }
+  
+    #menu-toggle {
+      display: none;
+    }
+  
+    #menu-icon {
+      display: flex;
+    }
+  
+    #menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 0;
+      background-color: #f9f9f9;
+      z-index: 1;
+    }
+  
+    #menu li {
+      margin: 0;
+    }
+  
+    #header-wrapper #menu-icon {
+      display: flex;
+      z-index: 2;
+    }
+  
+    #header-wrapper #menu-toggle:checked ~ #menu {
+      display: flex;
+      z-index: 1;
+    }
+  }
+  
+  /* Header end */
+
+#black1-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 407px;
+}
+
+#black1-wrapper p {
+    color: white;
+}
+
+#black1-text {
+    width: 250px;
+    margin-left: 19%;
+}
+
+#pb1 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+#pb2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#Explore-button {
+    width: 250px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+#white1-text {
+    display: flex;
+    flex-direction: row;
+}
+
+#white1-text p {
+    width: 540px;
+    margin-left: 19%;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#white1-text button {
+    margin-left: 130px;
+    width: 320px;
+    height: 56px;
+    margin-top: 40px;
+    background: #696969;
+    color: white;
+    font-weight: 800;
+    font-size: 22px;
+    
+}
+
+#white1-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#cos-img {
+    margin-left: 19%;
+    height: 350px;
+    width: 500px;
+}
+
+#evo-img {
+    margin-right: 19%;
+    width: 500px;
+    height: 350px;
+    margin-left: 39px;
+}
+
+#white1-p {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-weight: 800;
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+#black2-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 407px;
+}
+
+#black2-img {
+    height: 407px;
+    width: 850px;
+}
+
+#black2-text {
+    color: white;
+    text-decoration: none;
+    margin-left: 19%;
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 3%;
+}
+
+#white2p-wrapper  {
+    display: flex;
+    flex-direction: row;
+    margin-left: 24%;
+    margin-right: 21%;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+#white2img-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 19%;
+    margin-right: 19%;
+}
+
+#black3-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 407px;
+    margin-top: 60px;
+}
+  
+#black3p {
+    margin-left: 19%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 24px;
+    width: 400px;
+}
+  
+#hours-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#hours-wrapper p {
+    margin:0.2rem 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 225px;
+    background: rgba(196, 148, 64, 0.12);
+}
+
+#footer h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#footer p {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0.5rem 0;
+    text-decoration: underline;
+}
+
+#exhibition-footer {
+    margin-left: 19%;
+}
+
+#involved-footer {
+    margin-right: 19%;
+}

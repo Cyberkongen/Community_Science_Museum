@@ -1,0 +1,247 @@
+body {
+    font-family: Inter, sans-serif;
+}
+
+a:visited {
+    color: inherit;
+}
+
+/* Header start */
+
+#header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 18%;
+    margin-right: 18%;
+    position: relative;
+  }
+  
+  #logo {
+    width: 175px;
+    height: 114px;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  #menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  #menu-icon span {
+    display: block;
+    height: 3px;
+    background-color: #000;
+  }
+  
+  #menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    z-index: 1;
+  }
+  
+  #menu li {
+    margin: 10px;
+  }
+  
+  @media (max-width: 767px) {
+    #logo {
+      width: 120px;
+      height: 78px;
+    }
+  
+    #menu-toggle {
+      display: none;
+    }
+  
+    #menu-icon {
+      display: flex;
+    }
+  
+    #menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 0;
+      background-color: #f9f9f9;
+      z-index: 1;
+    }
+  
+    #menu li {
+      margin: 0;
+    }
+  
+    #header-wrapper #menu-icon {
+      display: flex;
+      z-index: 2;
+    }
+  
+    #header-wrapper #menu-toggle:checked ~ #menu {
+      display: flex;
+      z-index: 1;
+    }
+  }
+  
+  /* Header end */
+
+/* Map Start */
+
+#map-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 19%;
+}
+
+#map,
+#info {
+    flex-basis: 45%;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+#map iframe {
+    width: 100%;
+    height: 500px;
+}
+
+#location,
+#hours {
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+
+/* Map end */
+
+/* top-content */
+
+#info {
+    margin-right: 7%;
+    list-style: none;
+}
+
+#location p {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#hours {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#Admission,
+#Food-and-Drink,
+#Shop {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* Top-content */
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 225px;
+    background: rgba(196, 148, 64, 0.12);
+    margin-top: 3%;
+}
+
+#footer h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#footer p {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0.5rem 0;
+    text-decoration: underline;
+}
+
+#exhibition-footer {
+    margin-left: 19%;
+}
+
+#involved-footer {
+    margin-right: 19%;
+}
+
+/* Footer */
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    #header-wrapper {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #logo {
+        width: 120px;
+        height: 80px;
+    }
+
+    #navbar ul {
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+    #map-container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #map,
+    #info {
+        flex-basis: 100%;
+    }
+
+    #map iframe {
+        height: 300px;
+    }
+
+    #location p,
+    #hours {
+        margin-top: 30px;
+        font-size: 18px;
+    }
+
+    #Admission,
+    #Food-and-Drink,
+    #Shop {
+        font-size: 16px;
+    }
+
+    #footer {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    #exhibition-footer,
+    #Explore-footer,
+    #Events-footer,
+    #involved-footer {
+        margin: 20px;
+    }
+}

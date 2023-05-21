@@ -1,0 +1,281 @@
+body {
+    font-family: Inter, sans-serif;
+  }
+  
+  a:visited {
+    color: inherit;
+  }
+  
+/* Header start */
+
+#header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 18%;
+    margin-right: 18%;
+    position: relative;
+  }
+  
+  #logo {
+    width: 175px;
+    height: 114px;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  #menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  #menu-icon span {
+    display: block;
+    height: 3px;
+    background-color: #000;
+  }
+  
+  #menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    z-index: 1;
+  }
+  
+  #menu li {
+    margin: 10px;
+  }
+  
+  @media (max-width: 767px) {
+    #logo {
+      width: 120px;
+      height: 78px;
+    }
+  
+    #menu-toggle {
+      display: none;
+    }
+  
+    #menu-icon {
+      display: flex;
+    }
+  
+    #menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 0;
+      background-color: #f9f9f9;
+      z-index: 1;
+    }
+  
+    #menu li {
+      margin: 0;
+    }
+  
+    #header-wrapper #menu-icon {
+      display: flex;
+      z-index: 2;
+    }
+  
+    #header-wrapper #menu-toggle:checked ~ #menu {
+      display: flex;
+      z-index: 1;
+    }
+  }
+  
+  /* Header end */
+  
+  
+  
+  
+  
+  /* Support start */
+  
+  #blackbar {
+    background: black;
+    height: 2px;
+    margin-left: 19%;
+    margin-right: 19%;
+  }
+  
+  #title {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  
+  #support-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  #support-left {
+    margin-left: 19%;
+  }
+  
+  #support-right {
+    margin-right: 30%;
+    width: 550px;
+  }
+  
+  #support-right p {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  /* Support end */ 
+  
+  #blackbar2 {
+    background: black;
+    height: 2px;
+    margin-left: 19%;
+    margin-right: 19%;
+    margin-top: 8%;
+  }
+  
+  #involved-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 19%;
+    margin-right: 19%;
+  }
+  
+  #Volunteer {
+    width: 500px;
+  }
+  
+  #Volunteer p {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+  #Volunteer h1 {
+    font-weight: 700;
+    font-size: 40px;
+  }
+  
+  #internships {
+    text-align: right;
+    width: 500px;
+  }
+  
+  #internships p {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+  #internships h1 {
+    font-weight: 700;
+    font-size: 40px;
+  }
+  
+  /* Footer start */
+  
+  #footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 225px;
+    background: rgba(196, 148, 64, 0.12);
+    margin-top: 5%;
+  }
+  
+  #footer h3 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  
+  #footer p {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0.5rem 0;
+    text-decoration: underline;
+  }
+  
+  #exhibition-footer {
+    margin-left: 19%;
+  }
+  
+  #involved-footer {
+    margin-right: 19%;
+  }
+  
+  /* Footer end */
+  
+  /* Responsive Layout */
+  
+  /* For screens smaller than 768px */
+  @media (max-width: 767px) {
+    #header-wrapper {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  
+    #navbar ul {
+      margin-top: 0;
+      font-size: 20px;
+    }
+  
+    #blackbar,
+    #blackbar2 {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  
+    #support-wrapper,
+    #involved-content {
+      flex-direction: column;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  
+    #support-left,
+    #support-right,
+    #Volunteer,
+    #internships {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
+  
+    #involved-content {
+      margin-top: 5%;
+    }
+  
+    #footer {
+      flex-direction: column;
+      margin-top: 3%;
+      height: auto;
+    }
+  
+    #exhibition-footer,
+    #Explore-footer,
+    #Events-footer,
+    #involved-footer {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 3%;
+    }
+  }
+  
