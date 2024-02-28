@@ -1,6 +1,6 @@
-# Your project title
+# Nordic Elegance
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image](https://github.com/Cyberkongen/Community_Science_Museum/blob/main/images/CSM.png?raw=true)
 
 A simple overview of the use/purpose of the project.
 
