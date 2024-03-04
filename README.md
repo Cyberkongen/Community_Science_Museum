@@ -8,14 +8,8 @@ Static website for a fictional local science museum.
 
 ## Built With
 
-Made with:
-
 - HTML
 - CSS
-
-## Getting Started
-
-
 
 ### Running
 
